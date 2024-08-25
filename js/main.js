@@ -50,30 +50,6 @@ $(function () {
 
 
 
-    //=======BANNER SLIDER======
-    $('.banner_slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 4000,
-        dots: true,
-        arrows: false,
-        fade: true,
-
-        responsive: [
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    dots: false,
-                }
-            }
-        ]
-
-    });
-
-
-
 
     //=======BRANDING JS======
     $('.branding_slider').slick({
@@ -287,18 +263,6 @@ $(function () {
         pauseOnHover: true
     });
 
-
-
-    //=======BANNER 3 SLIDER======
-    $('.banner_3_slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: false,
-        arrows: false,
-        fade: true,
-    });
 
 
     //=======SERVICE 3 JS======
