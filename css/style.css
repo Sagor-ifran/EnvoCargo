@@ -4535,15 +4535,231 @@ button {
 
 
 /*===================================
-  PORTFOLIO SERVICE START
+  TEAM DETAILS START
 ===================================*/
 
 
 
 
 
+.wsus__team_details_left {}
+
+.wsus__team_details_left .img {
+  height: 460px;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+.wsus__team_details_left .name {
+  margin-top: 22px;
+}
+
+.wsus__team_details_left .name p {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.wsus__team_details_left .name h4 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 4px;
+}
+
+
+
+
+
+.wsus__team_details_left .social_media {
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.wsus__team_details_left .social_media li a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--colorWhite);
+  background: var(--colorPrimary);
+  transition: all linear .3s;
+  border-radius: 4px;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.wsus__team_details_left .social_media li a:hover {
+  background: var(--colorRed);
+}
+
+
+
+
+
+
+
+.wsus__team_details_left .address {
+  margin-top: 32px;
+}
+
+.wsus__team_details_left .address li {
+  margin-top: 7px;
+}
+
+.wsus__team_details_left .address li span {
+  width: 120px;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+
+.wsus__team_details_left .address li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--colorBlack);
+}
+
+.wsus__team_details_left .address li p {
+  display: inline;
+  font-weight: 600;
+}
+
+
+
+
+
+.wsus__team_details_right {
+  margin-left: 56px;
+}
+
+.wsus__team_details_right_top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wsus__team_details_right_top b {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  line-height: 56px;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--colorWhite);
+  background: var(--colorBlack);
+  font-family: var(--HeadingFont);
+}
+
+.wsus__team_details_right_top span {
+  display: inline-block;
+  width: 90%;
+  margin-left: 20px;
+  line-height: 26px;
+}
+
+
+
+.wsus__team_details_right p {
+  margin-top: 20px;
+}
+
+
+.wsus__team_details_right h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  margin-top: 55px;
+}
+
+
+.wsus__team_details_right ul {}
+
+
+
+
+
+
+
+.wsus__team_details_right ul {
+  margin-top: 20px;
+}
+
+.wsus__team_details_right ul li {
+  font-size: 16px;
+  margin-top: 10px;
+  padding-left: 15px;
+  color: var(--colorBlack);
+  position: relative;
+}
+
+.wsus__team_details_right ul li::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 0px;
+  width: 6px;
+  height: 6px;
+  background: var(--colorRed);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
 /*===================================
-  PORTFOLIO SERVICE END
+  TEAM DETAILS END
+===================================*/
+
+
+
+
+
+
+
+
+/*===================================
+  PHOTO $ VIDEO GALLERY START
+===================================*/
+
+.wsus__photo_gallery_page .wsus__gallery_item {
+  height: 520px;
+  margin: 25px 0px 0px 0px;
+}
+
+.wsus__photo_gallery_page .wsus__gallery_item .play_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--colorRed);
+}
+
+.wsus__photo_gallery_page .play_btn::after {
+  background: var(--colorRed);
+}
+
+/*===================================
+  PHOTO $ VIDEO GALLERY END
 ===================================*/
 
 
