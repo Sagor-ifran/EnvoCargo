@@ -4217,18 +4217,18 @@ button {
   text-transform: capitalize;
 }
 
-.wsus__sidebar_wizard .searchbox {
+.wsus__sidebar_wizard .sidebar_searchbox {
   margin-top: 26px;
   position: relative;
 }
 
-.wsus__sidebar_wizard .searchbox input {
+.wsus__sidebar_wizard .sidebar_searchbox input {
   padding: 13px 50px 13px 20px;
   background: transparent;
   border-radius: 4px;
 }
 
-.wsus__sidebar_wizard .searchbox button {
+.wsus__sidebar_wizard .sidebar_searchbox button {
   position: absolute;
   top: 7px;
   right: 20px;
