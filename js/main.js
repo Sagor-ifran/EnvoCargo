@@ -32,6 +32,18 @@ $(function () {
     });
 
 
+    //=======MANU SEARCH======
+    $(".searchbox").on("click", function () {
+        $(".menu_search").addClass("show_search");
+    });
+
+    $(".close_search").on("click", function () {
+        $(".menu_search").removeClass("show_search");
+    });
+
+
+
+
     //=======SELECT JS======
     $('.select_js').niceSelect();
 
@@ -348,6 +360,14 @@ $(function () {
 
 
 
+    // MENU SEARCH
+    $(".search").on("click", function () {
+        $(".menu_search").addClass("show_search");
+    });
+
+    $(".close_search").on("click", function () {
+        $(".menu_search").removeClass("show_search");
+    });
 
 
 
