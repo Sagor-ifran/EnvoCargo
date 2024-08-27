@@ -360,14 +360,35 @@ $(function () {
 
 
 
-    // MENU SEARCH
-    $(".search").on("click", function () {
-        $(".menu_search").addClass("show_search");
+    //=======BARFILLER JS======
+    $(document).ready(function () {
+        $('#bar1').barfiller({});
+        $('#bar2').barfiller({});
+        $('#bar3').barfiller({});
+        $('#bar4').barfiller({});
     });
 
-    $(".close_search").on("click", function () {
-        $(".menu_search").removeClass("show_search");
-    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
