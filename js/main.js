@@ -370,9 +370,24 @@ $(function () {
 
 
 
+    //=====LOGIN PASSWORD========
+    $(".show_password").on("click", function () {
+        $(".show_password").toggleClass("show");
+    });
+
+    $(".show_confirm_password").on("click", function () {
+        $(".show_confirm_password").toggleClass("show");
+    });
 
 
+    //=====LOGIN 2 PASSWORD========
+    $(".show_password_2").on("click", function () {
+        $(".show_password_2").toggleClass("show");
+    });
 
+    $(".show_confirm_password_2").on("click", function () {
+        $(".show_confirm_password_2").toggleClass("show");
+    });
 
 
 
