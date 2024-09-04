@@ -346,6 +346,24 @@ button {
   }
 }
 
+@keyframes zoom_animi {
+  from {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+  }
+}
+
 /* scrollbar start */
 
 #button {
@@ -926,6 +944,7 @@ button {
 /* about us start */
 
 .wsus__about {
+  position: relative;
   padding-left: 160px;
   padding-right: 160px;
 }
@@ -995,6 +1014,21 @@ button {
 
 .wsus__about_contant .common_btn {
   margin-top: 42px;
+}
+
+.wsus__about::after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 10px;
+  width: 220px;
+  height: 190px;
+  background: url(../images/about_shape.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  animation: left_to_right linear 3s infinite alternate;
+  -webkit-animation: left_to_right linear 3s infinite alternate;
 }
 
 /* about us end */
@@ -1089,6 +1123,10 @@ button {
 
 
 /* service start */
+
+.wsus__service {
+  position: relative;
+}
 
 .wsus__service_item {
   margin: 0px 12px;
@@ -1187,6 +1225,36 @@ button {
 .wsus__service .nextArrow,
 .wsus__service .prevArrow {
   top: -110px;
+}
+
+.wsus__service::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 40px;
+  width: 180px;
+  height: 155px;
+  background: url(../images/service_shape_2.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  animation: left_to_right linear 3s infinite alternate;
+  -webkit-animation: left_to_right linear 3s infinite alternate;
+}
+
+.wsus__service::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 190px;
+  height: 110px;
+  background: url(../images/service_shape_1.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  animation: left_to_right linear 3s infinite alternate;
+  -webkit-animation: left_to_right linear 3s infinite alternate;
 }
 
 /* service end */
@@ -1335,6 +1403,7 @@ button {
 /* faq start */
 
 .wsus__faq {
+  position: relative;
   background: var(--LightBg);
 }
 
@@ -1449,6 +1518,36 @@ button {
 
 .wsus__faq_accordion .accordion-body {
   border-top: 1px solid var(--BorderColor);
+}
+
+.wsus__faq::after {
+  position: absolute;
+  content: "";
+  top: 45%;
+  right: 0;
+  width: 190px;
+  height: 100px;
+  background: url(../images/faq_shape.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  animation: updown_animi linear 3s infinite alternate;
+  -webkit-animation: updown_animi linear 3s infinite alternate;
+}
+
+.wsus__faq::before {
+  position: absolute;
+  content: "";
+  top: 20%;
+  left: 0px;
+  width: 300px;
+  height: 470px;
+  background: url(../images/faq_shape_2.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  animation: updown_animi linear 3s infinite alternate;
+  -webkit-animation: updown_animi linear 3s infinite alternate;
 }
 
 /* faq end */
@@ -1669,6 +1768,7 @@ button {
 /* blog start */
 
 .wsus__blog {
+  position: relative;
   background: var(--LightBg);
 }
 
@@ -1757,6 +1857,21 @@ button {
   display: none;
 }
 
+.wsus__blog::after {
+  position: absolute;
+  content: "";
+  top: 80px;
+  left: 60px;
+  width: 185px;
+  height: 135px;
+  background: url(../images/blog_shape.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  animation: left_to_right linear 3s infinite alternate;
+  -webkit-animation: left_to_right linear 3s infinite alternate;
+}
+
 /* blog end */
 
 
@@ -1771,6 +1886,8 @@ button {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+  position: relative;
+  z-index: 1;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -1823,7 +1940,24 @@ button {
 }
 
 .wsus__footer {
+  position: relative;
   background: var(--colorBlack);
+}
+
+.wsus__footer::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0px;
+  width: 490px;
+  height: 325px;
+  background: url(../images/footer_shape.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  opacity: 0.5;
+  animation: zoom_animi linear 2s infinite alternate;
+  -webkit-animation: zoom_animi linear 2s infinite alternate;
 }
 
 .wsus__footer_contant {
@@ -2295,6 +2429,21 @@ button {
   position: relative;
 }
 
+.wsus__about_2_img::before {
+  position: absolute;
+  content: "";
+  top: 60px;
+  left: -170px;
+  width: 105px;
+  height: 70px;
+  background: url(../images/about_2_shape.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  animation: left_to_right linear 3s infinite alternate;
+  -webkit-animation: left_to_right linear 3s infinite alternate;
+}
+
 .wsus__about_2_img .text {
   position: absolute;
   bottom: 0;
@@ -2351,6 +2500,7 @@ button {
   display: block;
   height: 470px;
   position: relative;
+  margin: 0px 0px -6px 0px;
 }
 
 .wsus__service_2_item::after {
@@ -2424,6 +2574,10 @@ button {
 
 /* feature 2 start */
 
+.wsus__feature_2 {
+  position: relative;
+}
+
 .wsus__feature_2 .wsus__feature_item {
   border-radius: 0px;
   box-shadow: none;
@@ -2436,6 +2590,21 @@ button {
 
 .wsus__feature_2 .wsus__feature_item span img {
   filter: brightness(0) saturate(100%) invert(32%) sepia(99%) saturate(1089%) hue-rotate(202deg) brightness(96%) contrast(92%);
+}
+
+.wsus__feature_2::before {
+  position: absolute;
+  content: "";
+  top: 100px;
+  right: 0;
+  width: 220px;
+  height: 120px;
+  background: url(../images/feature_2_shape.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  animation: updown_animi linear 3s infinite alternate;
+  -webkit-animation: updown_animi linear 3s infinite alternate;
 }
 
 /* feature 2 end */
@@ -2526,6 +2695,22 @@ button {
 
 .wsus__process_2::after {
   display: none;
+}
+
+.wsus__process_2::before {
+  position: absolute;
+  content: "";
+  top: 70px;
+  right: 40px;
+  width: 160px;
+  height: 175px;
+  background: url(../images/process_2_shape.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  filter: brightness(0) saturate(100%) invert(61%) sepia(29%) saturate(3027%) hue-rotate(9deg) brightness(101%) contrast(98%);
+  animation: circle_animi linear 25s infinite;
+  -webkit-animation: circle_animi linear 25s infinite;
 }
 
 /* process 2 end */
@@ -3051,6 +3236,10 @@ button {
 
 /* about 2 start */
 
+.wsus__about_3 {
+  position: relative;
+}
+
 .wsus__about_3_img {
   position: relative;
   margin-bottom: 100px;
@@ -3117,6 +3306,21 @@ button {
 
 .wsus__about_3_contant .common_btn {
   margin-top: 40px;
+}
+
+.wsus__about_3::before {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  right: 20px;
+  width: 230px;
+  height: 120px;
+  background: url(../images/about_3_shape.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  animation: left_to_right linear 3s infinite alternate;
+  -webkit-animation: left_to_right linear 3s infinite alternate;
 }
 
 /* about 3 end */
@@ -3524,6 +3728,10 @@ button {
 
 /* contact us start */
 
+.wsus__contact_us {
+  position: relative;
+}
+
 .wsus__contact_us_contant ul {
   margin-top: 42px;
 }
@@ -3616,10 +3824,27 @@ button {
   margin-top: 40px;
 }
 
+.wsus__contact_us::after {
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  right: 0;
+  width: 300px;
+  height: 167px;
+  background: url(../images/contact_us_shape.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
 /* contact us end */
 
 
 /* footer 3 start */
+
+.wsus__footer_3::before {
+  display: none;
+}
 
 .wsus__footer_3 .wsus__footer_contant ul li a:hover {
   background: var(--colorSecondary);
@@ -3768,6 +3993,10 @@ button {
   background: transparent;
 }
 
+.wsus__blog_page::after {
+  display: none;
+}
+
 .wsus__pagination ul {
   gap: 15px;
 }
@@ -3824,6 +4053,11 @@ button {
 /*===================================
   SERVICE PAGE START
 ===================================*/
+
+.wsus__service_page::after,
+.wsus__service_page::before {
+  display: none;
+}
 
 .wsus__service_page .wsus__service_item {
   margin: 40px 0px 0px 0px;
