@@ -226,7 +226,7 @@ button {
   color: var(--colorWhite);
   text-transform: uppercase;
   font-family: var(--BodyFont);
-  background: rgba(23, 36, 51, 0.70);
+  background: var(--colorPrimary);
   backdrop-filter: blur(7px);
   padding: 7px 15px 7px 15px;
   letter-spacing: 1px;
@@ -3068,14 +3068,10 @@ button {
 /* main menu 3 start */
 
 .main_menu_3 {
-  height: 70px;
   backdrop-filter: blur(7px);
   background: rgba(23, 36, 51, 0.70);
 }
 
-.main_menu_3 .navbar-nav {
-  line-height: 70px;
-}
 
 .main_menu_3 .navbar-brand {
   margin-right: 150px;
@@ -3138,6 +3134,7 @@ button {
 
 .wsus__banner_3 {
   height: 100vh;
+  position: relative;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -3148,8 +3145,6 @@ button {
 }
 
 .wsus__banner_3_overly {
-  padding-left: 160px;
-  padding-right: 160px;
   background: #171718b8;
 }
 
@@ -3157,9 +3152,8 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   padding-top: 130px;
-  width: 52%;
 }
 
 .wsus__banner_3_text h6 {
@@ -3168,18 +3162,18 @@ button {
   color: var(--colorWhite);
   text-transform: uppercase;
   font-family: var(--BodyFont);
-  background: rgba(23, 36, 51, 0.70);
+  background: var(--colorPrimary);
   backdrop-filter: blur(7px);
   padding: 7px 15px 7px 15px;
 }
 
 .wsus__banner_3_text h1 {
-  font-size: 85px;
+  font-size: 75px;
   font-weight: 700;
-  line-height: 100px;
-  text-transform: uppercase;
+  line-height: 85px;
   color: var(--colorWhite);
   margin-top: 15px;
+  text-align: center;
 }
 
 .wsus__banner_3_text p {
@@ -3188,10 +3182,35 @@ button {
   line-height: 26px;
   color: rgba(255, 255, 255, 0.70);
   margin-top: 22px;
+  text-align: center;
+}
+
+.wsus__banner_3_text ul {
+  gap: 10px;
+  margin-top: 60px;
+}
+
+.wsus__banner_3_text .common_btn.explore {
+  background: var(--colorRed);
 }
 
 .wsus__banner_3_text .common_btn {
-  margin-top: 60px;
+  padding: 15px 30px;
+}
+
+.wsus__banner_3::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0px;
+  width: 400px;
+  height: 340px;
+  background: url(../images/about_shape.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  animation: left_to_right linear 3s infinite alternate;
+  -webkit-animation: left_to_right linear 3s infinite alternate;
 }
 
 /* banner end */
