@@ -2652,8 +2652,8 @@ button {
 
 .wsus__feature_2_item {
   position: relative;
-  margin-top: 50px;
-  padding: 60px 35px 55px 35px;
+  margin-top: 25px;
+  padding: 50px 35px 45px 35px;
   border: 1px solid var(--BorderColor);
 }
 
@@ -2672,18 +2672,17 @@ button {
 }
 
 .wsus__feature_2_item .title {
-  margin-top: 40px;
+  margin-top: 38px;
 }
 
 .wsus__feature_2_item .title:hover {
   color: var(--colorBlack);
 }
 
-
 .wsus__feature_2_item .link {
   font-size: 16px;
   font-weight: 700;
-  margin-top: 55px;
+  margin-top: 30px;
   text-transform: capitalize;
   color: var(--colorBlack);
   transition: all linear .3s;
@@ -2714,8 +2713,8 @@ button {
 
 .wsus__feature_2_item b {
   position: absolute;
-  top: -27px;
-  right: 30px;
+  top: 50px;
+  right: 35px;
   width: 54px;
   height: 54px;
   text-align: center;
@@ -2870,8 +2869,8 @@ button {
 
 .wsus__process_2_item .img span {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -6px;
+  right: -6px;
   width: 30px;
   height: 30px;
   font-size: 16px;
@@ -4656,10 +4655,6 @@ button {
 /*===================================
   BLOG DETAILS START
 ===================================*/
-
-
-
-
 
 .wsus__blog_details_left {
   margin-top: 60px;
