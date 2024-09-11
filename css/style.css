@@ -2673,6 +2673,9 @@ button {
 
 .wsus__feature_2_item .title {
   margin-top: 40px;
+}
+
+.wsus__feature_2_item .title:hover {
   color: var(--colorBlack);
 }
 
@@ -4479,6 +4482,10 @@ button {
   background-repeat: no-repeat !important;
 }
 
+.wsus__blog_about_page {
+  background: var(--LightBg);
+}
+
 /*===================================
   ABOUT US PAGE END
 ===================================*/
@@ -4597,6 +4604,14 @@ button {
   -o-border-radius: 10px;
 }
 
+.wsus__pricing_page .wsus__pricing_item .common_btn::after {
+  background: var(--colorPrimary);
+}
+
+.wsus__pricing_page .wsus__pricing_item .common_btn:hover {
+  color: var(--colorWhite);
+}
+
 /*===================================
   PRICING PAGE END
 ===================================*/
@@ -4631,10 +4646,6 @@ button {
 
 .wsus__team_page .wsus__team_item {
   margin: 30px 0px 0px 0px;
-}
-
-.wsus__team_page .wsus__team_item .img {
-  height: 460px;
 }
 
 /*===================================
@@ -5495,7 +5506,6 @@ button {
 ===================================*/
 
 
-
 /*===================================
   PHOTO $ VIDEO GALLERY START
 ===================================*/
@@ -5503,6 +5513,12 @@ button {
 .wsus__photo_gallery_page .wsus__gallery_item {
   height: 520px;
   margin: 25px 0px 0px 0px;
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.wsus__photo_gallery_page .wsus__gallery_item .text {
+  border-radius: 5px;
 }
 
 .wsus__photo_gallery_page .wsus__gallery_item .play_btn {
