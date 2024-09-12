@@ -2887,6 +2887,9 @@ button {
 .wsus__process_2_item .title {
   margin-top: 26px;
   font-size: 24px;
+}
+
+.wsus__process_2_item .title:hover {
   color: var(--colorBlack);
 }
 
@@ -3804,6 +3807,10 @@ button {
   background: transparent;
 }
 
+.wsus__feature_3 .wsus__feature_2_item .title:hover {
+  color: var(--colorBlack);
+}
+
 /* feature 3 end */
 
 
@@ -3987,6 +3994,15 @@ button {
 }
 
 /* why choose end */
+
+
+/* process 3 start */
+
+.wsus__process_2 .wsus__process_2_item .title:hover {
+  color: var(--colorSecondary);
+}
+
+/* process 3 end */
 
 
 /* testimonial start */
